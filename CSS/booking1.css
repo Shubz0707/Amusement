@@ -1,0 +1,53 @@
+body{
+	margin:0;
+	padding:0;
+	background-size:cover;
+	font-family:sans-serif;
+}
+
+.main{
+	position:absolute;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:600px;
+	height:700px;
+	box-sizing:border-box;
+	background:rgba(0,0,0,0.05);
+	padding:80px 40px;
+}
+
+.main p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color:black;
+}
+
+.main input{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.main input[type="number"],
+.main input[type="text"]
+{
+	border:none;
+	border-bottom:1px solid black;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:black;
+}
+
+.main select{
+	width:100%;
+	margin-bottom:20px;
+	border:none;
+	border-bottom:1px solid black;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:black;
+}
+

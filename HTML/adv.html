@@ -1,0 +1,141 @@
+<?php 
+$name=$_GET['name'];
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADVENTURE PARK</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/adv.css">
+</head>
+<body>
+	<div class="park-container">
+		<form id="1" action="#" >
+			<div class="park-info">
+				<fieldset>
+				<h2>WILD ADVENTURE PARK</h2>
+					<p>
+					Wild Adventures is a zoological theme park in Clyattville, Georgia, which is located 5 miles (8.0 						km) south of Valdosta, Georgia, United States. It is owned by Herschend Family Entertainment. The 						park features rides and attractions, including eight roller coasters, exotic animals, shows, 						Splash Island water park and concerts from country, pop, rock, Christian, and oldies superstars. 						The park is located just off Interstate 75.
+					</p>
+				<button type=submit class="myBtn" value="Wild Adventure park">Book Now</button>
+					<input type="hidden" name="name">
+					<input type="hidden" name="pname" value="Wild Adventure Park">
+					<input type="hidden" name="price" value="799">
+					
+				</fieldset>
+		</div>
+
+			<div class="park-box">
+				<img src="../parkupload/10.jpg" alt="park">
+				<div class="park-trans">
+					<div class="park-feature">
+						<p>WILD ADVENTURE PARK</p>
+						<p style="color: #fff;font-weight: bold;">Price : 799</p>
+						
+					</div>	
+				</div>
+			
+		</div>
+</form>
+<form id="2" method="GET" action="#">
+		<div class="park-info">
+				<fieldset>
+				<h2>WORLD OF ADVENTURES</h2>
+					<p>
+						Geauga Lake was a theme park in Bainbridge Township and Aurora, Ohio, United States. Established in 1887 in what had been a local recreation area adjacent to a lake of the same name, the first amusement ride was added in 1889, and the park's first roller coaster – later known as the Big Dipper – was built in 1925. In 1969, the park was sold to Funtime, Inc., and was expanded over the years with additional rides and amenities.			
+					</p>
+				<button type=submit class="myBtn" value="WORLD OF ADVENTURES" onclick="trial(this.value)">Book Now</button>
+					<input type="hidden" name="name">
+					<input type="hidden" name="pname" value="WORLD OF ADVENTURES"><input type="hidden" name="price" value="1399">
+					
+				</fieldset>
+		</div>
+
+		<div class="park-box">
+				<img src="../parkupload/12.jpg" alt="park">
+				<div class="park-trans">
+					<div class="park-feature">
+						<p>WORLD OF ADVENTURES</p>
+						<p style="color: #fff;font-weight: bold;">Price : 1399</p>
+						
+					</div>	
+				</div>
+			
+		</div>
+</form>
+<form id="3" method="GET" action="#">
+		<div class="park-info">
+				<fieldset>
+				<h2>WONDERLA AMUSEMENT PARK</h2>
+					<p>
+					Wonderla is one of the largest chain of amusement parks in India. It is owned and operated by Wonderla 						Holidays Limited which is headquartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka. 						Wonderla Holidays currently operates 3 amusement parks in Kochi, Bengaluru and Hyderabad, and 1 resort in 						Bengaluru.[1] It is promoted by Kochouseph Chittilappilly and his son Arun Chittilappilly as a subsidiary 						of V-Guard Industries.The first amusement park, Wonderla Kochi, was set up in 2000.	
+					</p>
+				<button type=submit class="myBtn" value="WONDERLA AMUSEMENT PARK">Book Now</button>
+					<input type="hidden" name="name">
+					<input type="hidden" name="pname" value="WONDERLA AMUSEMENT PARK"><input type="hidden" name="price" value="1299">
+					
+				</fieldset>
+		</div>
+
+		<div class="park-box">
+				<img src="../parkupload/7.jpg" alt="park">
+				<div class="park-trans">
+					<div class="park-feature">
+						<p>WONDERLA AMUSEMENT PARK</p>
+						<p style="color: #fff;font-weight: bold;">Price : 1299</p>
+						
+					</div>	
+				</div>
+			
+		</div>
+	</div>
+</form>
+
+</body>
+</body>
+</html></p> <!--booking form -->
+  </div>
+
+</div>
+
+
+<script>
+function trial(clicked_class){
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var inputfield=document.getElementById("park");
+ inputfield.setAttribute("value",clicked_class);
+// Get the button that opens the modal
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+
+  modal.style.display = "block";
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+}
+</script>
+
+
+
+
+
+</body>
+</html>
+</body>
+</html>

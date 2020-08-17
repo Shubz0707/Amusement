@@ -1,0 +1,77 @@
+.park-container{
+		padding-left: 70px;
+}
+
+.park-box{
+	width:235px;
+	height:250px;
+	overflow:hidden;
+	margin: 0 20 30 0;
+	position: relative;
+	
+}
+.park-box>img{
+	max-width:80%;
+	background-size: cover;
+}
+.park-trans{
+
+	background:rgba(0,0,0,0.6);
+	width: 80%;
+	height: 96%;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0; 
+	position: absolute;
+	opacity: 0;
+	transition: all .5s ease;
+}
+.park-box:hover .park-trans{
+	opacity: 1;
+	transition: all .5s ease;
+}
+.park-feature{
+
+	
+	text-align: center;
+	margin-top: -100px;
+	transition: all .5s ease;
+}
+.park-feature p{
+	color: #fff;
+	font-family: verdana;
+}
+.park-box:hover .park-feature{
+
+	margin-top: 100px;
+	transition: all .5s ease;
+}
+input[type=button]{
+	  width: 50%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    background:#fff;
+    opacity: 0.7;
+    border-radius: 20px;
+   font-weight: bold;
+    color: ;
+}
+input[type=button]:hover{
+    background:#003366;
+    opacity:0.7;
+    
+}
+.park-info{
+	width:1020px;
+	height:250px;
+	overflow:hidden;
+	margin: 0 20 30 0;
+	position: relative;
+	float:right;
+	padding:right;
+	
+}
+

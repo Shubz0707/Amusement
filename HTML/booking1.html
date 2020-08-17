@@ -1,0 +1,70 @@
+<!--<?php
+session_start();
+require("connect.php");
+
+?>-->
+<html>
+<head>
+</head>
+<body>
+<form method="post">
+<div class="search">
+<i class="fa fa-search"></i>
+<input type="text" name="serchtxt" placeholder="search" >
+<input type="submit" value="search" name="serchbtn">
+</div>
+</form>
+<?php
+$op="";
+if(isset($_GET['op']))
+$op=$_GET['op'];
+if(isset($_GET['id']))
+$id=$_GET['id'];
+
+if($op=="del")
+	$del=pg_query("delete from patient where pid=$id");
+
+
+$key="";
+if(isset($_POST['serchtxt']))
+$key=$_POST['serchtxt'];
+
+if($key!="")
+{
+  $q=pg_query("select * from patient where pname like '%$key%'");
+}
+else
+$q=pg_query("select * from patient");
+?>
+<table>
+	<tr>
+	<th>sr.no</th>
+	<th>patient name</th>
+	<th>gender</th>
+	<th>date of birth</th>
+	<th>address</th>
+	<th>contact no</th>
+	<th>email</th>
+	<th colspan=2>operation</th>
+	</tr>
+<?php
+  while($row=pg_fetch_array($q))
+{
+?>
+	<tr>
+	<td><?php echo ++$i; ?></td>
+	<td><?php echo $row['pname']; ?></td>
+	<td><?php echo $row['pgender']; ?></td>
+	<td><?php echo $row['pdob']; ?></td>
+	<td><?php echo $row['paddr']; ?></td>
+	<td><?php echo $row['pmob']; ?></td>
+	<td><?php echo $row['pemail']; ?></td>
+	<td><a href="?tag=view_patient&op=upd&id=<?php echo $row['pid']; ?>"><i class='fas fa-sync-alt' style="font-size:24px"></i></a></td>
+	<td><a href="?tag=view_patient&op=del&id=<?php echo $row['pid']; ?>"><i class='fas fa-trash-alt' style="font-size:24px"></i></a></td>
+	</tr>
+<?php
+}
+?>
+</table>
+</body>
+</html>

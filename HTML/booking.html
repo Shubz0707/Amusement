@@ -1,0 +1,35 @@
+<?php
+	$host="localhost";
+	$user="postgres";
+	$pass="root!@#$1234";
+	$db="amusement";
+	$con=pg_connect("host=$host dbname=$db user=$user password=$pass") or die('Could not connect:' . pg_last_error());
+	
+
+	$park_name=$_POST['park'];
+ 	
+ 	$id=$_POST['id'];
+	$cname=$_POST['cname'];
+	$contact=$_POST['contact'];
+	$adults=$_POST['anumber'];
+	$childrens=$_POST['cnumber'];
+	$bdate=$_POST['bdate'];
+	$price=$_POST['price'];
+	$email=$_POST['email'];
+	
+	$res=pg_query("INSERT INTO booking (customer_name,contact,park,adults,children,price,booking_date,email) VALUES('".$cname."','".$contact."','".$park_name."','".$adults."','".$childrens."','".$price."','".$bdate."','$email')");
+	
+	if($res){
+		echo " Your Ticket Is Booked.....";
+		$url = 'success.html';
+    $url .= "?name=$id";
+   
+    header("refresh:2;".$url);
+
+
+	}
+	else{
+		echo "not inserted";
+	}
+
+?>

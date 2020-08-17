@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link href="../CSS/reg.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../JS/reg.js"></script>
+</head>
+<body>
+   <div class="sign">
+<form method="post" action="../HTML/reg.php">
+<h2>NEW REGISTRATION</h2>
+<input type="text"  name="u_name" id="u_name" placeholder="Enter Name" onblur="isalpha(document.getElementById('u_name'),'Alphabets only')" required ><br><br>
+
+<input type="text" name="u_email" id="u_email" placeholder="Email" onblur="isemail(document.getElementById('u_email'),'Plz Enter correct Email-id')" required><br><br>
+
+<input type="text" name="contact"  id="u_no" placeholder="Contact No" onblur="isNum(document.getElementById('u_no'),'Plz Enter Contact Number')" required><br><br>
+
+<input type="text" name="address" placeholder="Address" required><br><br>
+
+<input type="text" name="uname" id="u_nn" placeholder="Username" onblur="isuser(document.getElementById('u_nn'),'Only 8 letters allow')" required><br><br>
+
+<input type="password" name="pws" id="u_pass" placeholder="Password" onblur="ispass(document.getElementById('u_pass'),'Password should be 8 character')" required><br><br>
+
+<input type="password" name="cpws" placeholder="Confirm Password" required><br><br>
+
+
+
+
+<input type="submit" value="Confirm Registration" /><br /><br />
+
+</form>
+</div>
+</body>
+</html>

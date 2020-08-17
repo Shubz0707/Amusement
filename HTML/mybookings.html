@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>BOOKING FORM</title>
+	<link rel="stylesheet" type="text/css" href="/var/www/html/websitehtml/CSS/booking1.css">
+
+</head>
+
+<body>
+	<?php
+	$host="localhost";
+	$user="postgres";
+	$pass="root!@#$1234";
+	$db="amusement";
+	$con=pg_connect("host=$host dbname=$db user=$user password=$pass") or die('Could not connect:' . pg_last_error());
+	
+	
+	$res=pg_query("select * from booking");
+	if($res){
+	dd('hello');	
+	}
+	else{
+	dd('bye');
+	} 
+	?>
+	<div>
+	<h1 style="margin-left:40%;">Booking Record</h1>
+	<!--Table start -->
+	<table border="2" style="margin:auto;border:2px solid black;border-spacing:7px;">
+	<thead>
+		<th>#</th>
+		<th>Customer Name</th>
+		<th>Contact No</th>
+		<th>Park Name</th>
+		<th>No Of Adults</th>
+		<th>No of Children</th>
+		<th>Booking Date</th>
+		<th>Price</th>
+		<th>Actions</th>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<!--table end -->	
+	</table>
+	</div>
+	
+</body>
+</html>

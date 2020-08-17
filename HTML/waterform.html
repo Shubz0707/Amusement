@@ -1,0 +1,55 @@
+<?php
+require("connect.php"); 
+$pname=$_GET['pname'];
+$price=$_GET['price'];
+$uid=$_GET['name'];
+
+$q=pg_query("select * from registration where username='$uid'");
+while ($row=pg_fetch_array($q)) {
+	$cname=$row['name'];
+	$email=$row['email'];
+	$mob=$row['contact'];
+}
+
+?>
+<html>
+<head>
+	<link  href="../CSS/waterform.css" rel="stylesheet" type="text/css">	
+</head>
+<body>
+<form  action="../HTML/booking.php" method="post">
+				<div class="container">
+				<br><br>
+				<h1>RESERVATION FOR PARK....</h1>
+		
+			<input type="hidden" name="id" value="<?php echo"$uid"; ?>">
+			<p>Park Name</p>
+			<input type=text id="park" name="park" placeholder=" " value="<?php echo"$pname"; ?>" readonly>
+			
+			<p>Customer Name</p>
+			<input type=text name="cname" placeholder="Enter Customer Name" value="<?php echo"$cname"; ?>">
+
+			<p>Customer email</p>
+			<input type=text name="email" placeholder="" value="<?php echo"$email"; ?>">
+
+			<p>Contact No.</p>
+			<input type=text name="contact" placeholder="" value="<?php echo"$mob"; ?>">
+
+			<p>Number Of Adults</p>
+			<input type=number name=anumber min="1" max="20">
+			
+			<p>Number Of Chidrens</p>
+			<input type=number name=cnumber min="1" max="20">
+
+			<p>Price</p>
+			<input type=text name="price" placeholder="Amount" value="<?php echo"$price"; ?>">
+			
+			<p>Date</p>
+			<input type=text  name="bdate" placeholder="mm/dd/yyyy">
+			<br><br>
+			<input type=submit value=CONFIRM>
+
+			</div>
+		</form>
+	</body>
+</html>

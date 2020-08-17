@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+body{
+	 background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('1.jpg');
+	  background-size: cover;
+}
+
+
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color: #fff;
+	font-size: 40px;
+	letter-spacing: 1px;
+	padding-left: 30px;
+}
+.title h2{
+	
+	color: #fff;
+	font-size: 20px;
+	padding-left: 80px;
+	letter-spacing: 5px;
+}
+.button{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-weight: bold;
+}
+.btn{
+	border:1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration:none; 
+	transition: 0.6s ease;
+}
+.btn-1{
+	border:1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration:none; 
+	transition: 0.6s ease;
+	margin-left:35%;
+	
+}
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+.btn-1:hover{
+	background-color: #fff;
+	color: #000;
+}
+li{
+	display: inline-block;
+	float:right;
+	margin-top:10px;
+	margin-right:5px;
+}
+
+li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 25px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+li a:hover{
+	background-color: #fff;
+	color: #000;
+}

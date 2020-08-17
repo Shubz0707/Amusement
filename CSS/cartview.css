@@ -1,0 +1,72 @@
+			*{
+				 margin: 0;
+				 padding: 0;
+				 font-size: 20px;
+				 text-transform: capitalize;
+				}
+				body{
+					 background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('addcart.jpg');
+					  background-repeat: no-repeat;
+					  background-attachment: fixed;
+					  background-size: 100% 100%;
+				}
+				table{
+				 border: 5px solid #f1f1f1;
+				 border-collapse: collapse;
+				 width: 40%;
+				background-color: #11ccff;
+
+				}
+				.button {
+				  background-color: yellow;
+				  border: none;
+				  color: black;
+				  padding: 10px 30px;
+				  text-align: center;
+				  text-decoration: none;
+				  display: inline-block;
+				  font-size: 16px;
+				  margin: 4px 2px;
+				  cursor: pointer;
+				  border-radius: 10px;
+				}
+
+				table tr th,td{
+				 border: 1px solid #f1f1f1;
+				 padding: 14px;
+				 font-size: 17px;
+				 opacity: 0.7;
+				 font-weight: bold;
+				 }
+				table tr th{
+				 background-color: #ffae42;
+				 color: white;
+				 border: solid;
+
+				}
+				table tr:hover{
+				background-color: #ddcc99;
+				}
+				ul {
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				  overflow: hidden;
+				  background-color: #333;
+				}
+
+				li {
+				  float: left;
+				}
+
+				li a {
+				  display: block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				}
+
+				li a:hover {
+				  background-color: #111;
+				}
