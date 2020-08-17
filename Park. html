@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMUSEMENT PARK</title>
+	<link  href="../CSS/park.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+		<li><a></a></li	>
+		
+		<div class="title">
+			<h2>WE ARE JUST AMAZING PEOPLE</h2>
+			<h1>ONLINE AMUSEMENT PARK</h1>
+			
+		</div>
+		<div class="button">
+			<a id="video" class="btn" onclick="vdo()">WATCH VIDEO</a>
+			
+			<a href="home.html" class="btn">GET STARTED</a><br><br><br>
+
+			
+		</div>
+	
+
+<script type="text/javascript">
+	function vdo()
+	{
+		window.open("video.html","video","width=600,height=300");
+	
+	}
+	vdo.play();
+</script>
+</body>
+
+</html>
